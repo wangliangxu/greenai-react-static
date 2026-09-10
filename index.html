@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- PWA 基础配置 -->
+    <title>GreenAI - 探索环境科学</title>
+    <meta name="description" content="探索环境科学，理解全球变化，成为保护地球的小卫士。面向小学生的气候变化教育平台。" />
+    <meta name="theme-color" content="#10b981" />
+    
+    <!-- 图标配置 -->
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    
+    <!-- Bokeh 3.9.0 - 与后端 Python bokeh 版本一致；本地加载，避免依赖 CDN 网络 -->
+    <script type="text/javascript" src="/vendor/bokeh/3.9.0/bokeh.min.js"></script>
+    <script type="text/javascript" src="/vendor/bokeh/3.9.0/bokeh-gl.min.js"></script>
+    <script type="text/javascript" src="/vendor/bokeh/3.9.0/bokeh-widgets.min.js"></script>
+    <script type="text/javascript" src="/vendor/bokeh/3.9.0/bokeh-tables.min.js"></script>
+    <script type="text/javascript" src="/vendor/bokeh/3.9.0/bokeh-api.min.js"></script>
+    
+    <!-- iOS Safari 配置 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="GreenAI" />
+    
+    <!-- Android Chrome 配置 -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    
+    <!-- SEO & 社交分享 -->
+    <meta property="og:title" content="GreenAI" />
+    <meta property="og:description" content="探索环境科学，理解全球变化，成为保护地球的小卫士" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/pwa-512x512.png" />
+    <script type="module" crossorigin src="/assets/index-DHngTPWE.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/graph-elk-vendor-Li36BjGE.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-scheduler-7OC5HNn7.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-Dq4ExT0-.js">
+    <link rel="modulepreload" crossorigin href="/assets/router-vendor-DsxEqWhI.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--tanstack-query-core-C2VoyEbk.js">
+    <link rel="modulepreload" crossorigin href="/assets/query-vendor-BdrigI4O.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-crelt-C8TCjufn.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--babel-runtime-C7v6W3xq.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--lezer-common-JpyzRPEz.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--uiw-codemirror-extensions-basic-setup-BJGgNZpU.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--lezer-highlight-FPVvpV3n.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--lezer-markdown-B16OSW-s.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--lezer-lr-89juaN5r.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--lezer-cpp-DwSIdEI1.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--lezer-go-clWtfgCW.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--lezer-java-DQ-JI4Wy.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--lezer-json-B5hcOFMk.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--lezer-php-Dvkhmyfa.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--lezer-python-CD9SYIWU.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--lezer-rust-CnCPhwnE.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--lezer-sass-BYiEDnq0.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--lezer-xml-D8ZCme4n.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--lezer-yaml-CGdG0mhL.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--marijn-find-cluster-break-DXwl3gUT.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-style-mod-Bs6eFhZE.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-w3c-keyname-Vcq4gwWv.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--lezer-html-DJ74gFCm.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--lezer-css-DBKoNjBJ.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--lezer-javascript-ddqNWqMq.js">
+    <link rel="modulepreload" crossorigin href="/assets/editor-vendor-LSTs8a79.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-axios-B9ygI19o.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-is-BiLN5WJ0.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-hoist-non-react-statics-29OctJXt.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-clsx-B-dksMZM.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-transition-group-DG9ngAKL.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor--popperjs-core-DC5wud4b.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-stylis-DDa9OTMq.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-motion-utils-CjIqCkNq.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-motion-dom-BvxRNICd.js">
+    <link rel="modulepreload" crossorigin href="/assets/ui-vendor-CKXbPOsj.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-goober-wofAfydu.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-hot-toast-ktve15hT.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-l2308-2B.css">
+  <link rel="manifest" href="/manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

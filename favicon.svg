@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="earthGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- �ob -->
+  <circle cx="256" cy="256" r="240" fill="url(#earthGradient)"/>
+  
+  <!-- 0��H -->
+  <ellipse cx="256" cy="256" rx="180" ry="180" fill="none" stroke="white" stroke-width="8" opacity="0.3"/>
+  <ellipse cx="256" cy="256" rx="120" ry="180" fill="none" stroke="white" stroke-width="6" opacity="0.3"/>
+  <ellipse cx="256" cy="256" rx="60" ry="180" fill="none" stroke="white" stroke-width="4" opacity="0.3"/>
+  <line x1="76" y1="256" x2="436" y2="256" stroke="white" stroke-width="6" opacity="0.3"/>
+  <line x1="256" y1="76" x2="256" y2="436" stroke="white" stroke-width="6" opacity="0.3"/>
+  
+  <!-- �P��h��	 -->
+  <g transform="translate(180, 160)">
+    <path d="M76 0 C140 40, 152 120, 76 180 C0 120, 12 40, 76 0 Z" fill="url(#leafGradient)"/>
+    <path d="M76 180 L76 40" stroke="white" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M76 80 Q100 60, 110 40" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M76 120 Q50 100, 40 80" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- k��L�p -->
+  <g transform="translate(320, 320)">
+    <path d="M40 0 L80 20 L80 60 Q80 100, 40 120 Q0 100, 0 60 L0 20 Z" fill="white" opacity="0.9"/>
+    <path d="M40 20 L60 30 L60 55 Q60 80, 40 95 Q20 80, 20 55 L20 30 Z" fill="#10b981"/>
+  </g>
+</svg>
