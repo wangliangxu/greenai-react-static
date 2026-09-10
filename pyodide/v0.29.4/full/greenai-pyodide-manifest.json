@@ -1,0 +1,167 @@
+{
+  "pyodideVersion": "0.29.4",
+  "python": "3.13.2",
+  "abiVersion": "2025_0",
+  "packageRoots": [
+    "pandas",
+    "geopandas",
+    "matplotlib"
+  ],
+  "packageCount": 22,
+  "packages": [
+    {
+      "name": "attrs",
+      "version": "25.2.0",
+      "file": "attrs-25.2.0-py3-none-any.whl",
+      "sizeBytes": 64016,
+      "status": "cached"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.1.4",
+      "file": "certifi-2026.1.4-py3-none-any.whl",
+      "sizeBytes": 152900,
+      "status": "cached"
+    },
+    {
+      "name": "click",
+      "version": "8.3.1",
+      "file": "click-8.3.1-py3-none-any.whl",
+      "sizeBytes": 108274,
+      "status": "cached"
+    },
+    {
+      "name": "cligj",
+      "version": "0.7.2",
+      "file": "cligj-0.7.2-py3-none-any.whl",
+      "sizeBytes": 7069,
+      "status": "cached"
+    },
+    {
+      "name": "contourpy",
+      "version": "1.3.1",
+      "file": "contourpy-1.3.1-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "sizeBytes": 117168,
+      "status": "cached"
+    },
+    {
+      "name": "cycler",
+      "version": "0.12.1",
+      "file": "cycler-0.12.1-py3-none-any.whl",
+      "sizeBytes": 8321,
+      "status": "cached"
+    },
+    {
+      "name": "fiona",
+      "version": "1.9.5",
+      "file": "fiona-1.9.5-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "sizeBytes": 10998269,
+      "status": "cached"
+    },
+    {
+      "name": "fonttools",
+      "version": "4.56.0",
+      "file": "fonttools-4.56.0-py3-none-any.whl",
+      "sizeBytes": 1089800,
+      "status": "cached"
+    },
+    {
+      "name": "geopandas",
+      "version": "1.1.1",
+      "file": "geopandas-1.1.1-py3-none-any.whl",
+      "sizeBytes": 176553,
+      "status": "cached"
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.4.8",
+      "file": "kiwisolver-1.4.8-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "sizeBytes": 37068,
+      "status": "cached"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.8.4",
+      "file": "matplotlib-3.8.4-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "sizeBytes": 6664081,
+      "status": "cached"
+    },
+    {
+      "name": "numpy",
+      "version": "2.2.5",
+      "file": "numpy-2.2.5-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "sizeBytes": 2823762,
+      "status": "cached"
+    },
+    {
+      "name": "packaging",
+      "version": "26.2",
+      "file": "packaging-26.2-py3-none-any.whl",
+      "sizeBytes": 100225,
+      "status": "cached"
+    },
+    {
+      "name": "pandas",
+      "version": "2.3.3",
+      "file": "pandas-2.3.3-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "sizeBytes": 4493372,
+      "status": "cached"
+    },
+    {
+      "name": "pillow",
+      "version": "11.3.0",
+      "file": "pillow-11.3.0-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "sizeBytes": 1037865,
+      "status": "cached"
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.2.1",
+      "file": "pyparsing-3.2.1-py3-none-any.whl",
+      "sizeBytes": 107717,
+      "status": "cached"
+    },
+    {
+      "name": "pyproj",
+      "version": "3.7.2",
+      "file": "pyproj-3.7.2-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "sizeBytes": 3778596,
+      "status": "cached"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "file": "python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "sizeBytes": 229892,
+      "status": "cached"
+    },
+    {
+      "name": "pytz",
+      "version": "2025.2",
+      "file": "pytz-2025.2-py2.py3-none-any.whl",
+      "sizeBytes": 509225,
+      "status": "cached"
+    },
+    {
+      "name": "setuptools",
+      "version": "76.0.0",
+      "file": "setuptools-76.0.0-py3-none-any.whl",
+      "sizeBytes": 953457,
+      "status": "cached"
+    },
+    {
+      "name": "shapely",
+      "version": "2.0.7",
+      "file": "shapely-2.0.7-cp313-cp313-pyemscripten_2025_0_wasm32.whl",
+      "sizeBytes": 832503,
+      "status": "cached"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "file": "six-1.17.0-py2.py3-none-any.whl",
+      "sizeBytes": 11050,
+      "status": "cached"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "variable": "bio12",
+  "variable_name": "年降水量",
+  "variable_name_en": "Annual Precipitation",
+  "unit": "mm",
+  "data_source": "WorldClim 2.1",
+  "data_period": "1970-2000",
+  "projection": "Robinson",
+  "bounds": {
+    "min_lon": -180.0,
+    "max_lon": 180.0,
+    "min_lat": -90.0,
+    "max_lat": 90.0
+  },
+  "data_range": {
+    "min": 0,
+    "max": 4000
+  },
+  "image_file": "bio12_precipitation.png",
+  "image_url": "/maps/bio12_precipitation.png"
+}
