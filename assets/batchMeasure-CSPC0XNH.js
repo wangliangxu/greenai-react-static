@@ -1,1 +1,0 @@
-import{r as e}from"./rolldown-runtime-C0FnF6B9.js";import{n as t}from"./TextMeasurer-88QchhLo.js";var n=e({batchMeasureTextsSync:()=>r});function r(e){return e.map((e,n)=>({index:n,text:e.text,height:t.measureHeight(e.text,e.maxWidth,e.lineHeight,e.fontConfig)}))}export{n as t};

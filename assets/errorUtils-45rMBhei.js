@@ -1,1 +1,0 @@
-function e(e,t=`操作失败`){if(e instanceof Error){let n=e;return n.response?.data?.detail?n.response.data.detail:e.message||t}return typeof e==`string`?e:t}export{e as t};

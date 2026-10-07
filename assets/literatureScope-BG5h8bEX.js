@@ -1,0 +1,1 @@
+const t="文献是学术与研究参考资料，包括论文、学位论文、研究报告、专著等。课件、作业附件及普通办公文档请使用文件或教学资源管理。",e={paper:"论文",thesis:"学位论文",research_report:"研究报告",monograph:"专著",other_reference:"其他研究资料"};function a(r){return e[r]||e.other_reference}export{a,e as b,t as l};
