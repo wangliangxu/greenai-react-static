@@ -45,7 +45,7 @@ async def _ga_execute(source):
 `;
 async function handle(method, args) {
   if (method === 'init') {
-    importScripts(args.indexURL + 'pyodide.js');
+    const { loadPyodide } = await import(args.indexURL + 'pyodide.mjs');
     python = await loadPyodide({ indexURL: args.indexURL });
     python.FS.mkdirTree('/data'); python.FS.mkdirTree('/work'); python.FS.chdir('/work');
     await python.runPythonAsync(runner);
