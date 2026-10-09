@@ -1,0 +1,18 @@
+import{k as s}from"./index-C2DqLprj.js";const i=t=>`/api/notebooks/${encodeURIComponent(t)}`,m=async t=>(await s.get(i(t))).data,b=async(t,e,a)=>(await s.put(i(t),{document:e,base_revision:a})).data,w=async t=>(await s.get(`${i(t)}/files`)).data,g=async(t,e)=>new Uint8Array((await s.get(`${i(t)}/files/${encodeURIComponent(e)}`,{responseType:"arraybuffer"})).data),k=async(t,e)=>new Uint8Array((await s.get(`${i(t)}/data/${encodeURIComponent(e)}`,{responseType:"arraybuffer"})).data);async function l(t,e,a){const o=new FormData;o.append("file",new Blob([a.slice().buffer]),e),await s.post(`${i(t)}/files`,o,{headers:{"Content-Type":void 0}})}const _=async(t,e)=>(await s.post(`${i(t)}/submissions`,{revision:e})).data;function A(t,e,a="application/octet-stream"){const o=URL.createObjectURL(new Blob([e],{type:a})),n=document.createElement("a");n.href=o,n.download=t,n.click(),setTimeout(()=>URL.revokeObjectURL(o),1e3)}const y=t=>Array.isArray(t)?t.join(""):t;function u(t){const e=t.metadata.greenai,a=e&&typeof e=="object"?e:{};return{execution_enabled:a.execution_enabled!==!1,title:typeof a.title=="string"?a.title:"",instruction:typeof a.instruction=="string"?a.instruction:"",group:typeof a.instruction_group=="string"?a.instruction_group:""}}function $(t,e){const a=u(t[e]),o=e>0&&t[e-1].cell_type==="code"?u(t[e-1]):void 0;return a.group&&o?.group===a.group&&o.instruction===a.instruction?"":a.instruction}const h=t=>({id:`cell-${crypto.randomUUID()}`,cell_type:t,source:"",metadata:{},...t==="code"?{outputs:[],execution_count:null}:{}});function N(t){if(new TextEncoder().encode(t).length>8*1024*1024)throw new Error("Notebook 不能超过 8 MB");const e=JSON.parse(t);if(e.nbformat!==4||!Number.isInteger(e.nbformat_minor)||!Array.isArray(e.cells)||e.cells.length>200||!e.metadata||typeof e.metadata!="object")throw new Error("请选择有效的 nbformat 4 Notebook（最多 200 个单元）");const a=new Set;return e.cells=e.cells.map(o=>{if(!o||!["code","markdown","raw"].includes(o.cell_type)||typeof o.source!="string"&&!(Array.isArray(o.source)&&o.source.every(r=>typeof r=="string")))throw new Error("Notebook 单元类型或内容无效");if(o.metadata&&(typeof o.metadata!="object"||Array.isArray(o.metadata)))throw new Error("Notebook 单元 metadata 无效");if(o.outputs&&(!Array.isArray(o.outputs)||o.outputs.some(r=>!r||!["stream","error","execute_result","display_data"].includes(r.output_type)||r.traceback&&(!Array.isArray(r.traceback)||r.traceback.some(c=>typeof c!="string"))||r.text&&typeof r.text!="string"&&!(Array.isArray(r.text)&&r.text.every(c=>typeof c=="string"))||r.data&&(typeof r.data!="object"||Object.entries(r.data).some(([c,d])=>c.startsWith("text/")&&typeof d!="string"&&!(Array.isArray(d)&&d.every(p=>typeof p=="string")))))))throw new Error("Notebook 输出格式无效");const n=o.id||`cell-${crypto.randomUUID()}`;if(!/^[a-zA-Z0-9_-]{1,64}$/.test(n)||a.has(n))throw new Error("单元编号重复或无效");return a.add(n),{...o,id:n,metadata:o.metadata||{},...o.cell_type==="code"?{outputs:o.outputs||[],execution_count:o.execution_count??null}:{}}}),e.nbformat_minor=Math.max(5,e.nbformat_minor),e}function x(t){const e=(t.outputs||[]).map(r=>r.output_type==="error"?r.traceback?.join(`
+`)||r.evalue:y(r.text||r.data?.["text/plain"]||"")).join(`
+`),a=u(t).instruction,o=t.metadata.greenai?.executed_source,n=typeof o=="string"&&o!==y(t.source)?`
+
+这些输出来自修改前的代码，当前代码还没有重新运行。上次运行的代码：
+\`\`\`python
+${o}
+\`\`\``:"";return`请帮助我理解这段代码，先给提示，帮助我自己检查结果。${a?`
+
+练习提示：${a}`:""}
+
+当前代码：
+\`\`\`python
+${y(t.source)}
+\`\`\`
+
+运行结果：
+${e.slice(0,12e3)}${n}`}export{m as a,k as b,y as c,u as d,A as e,x as f,_ as g,w as l,h as n,N as p,g as r,b as s,l as u,$ as v};
