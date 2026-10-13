@@ -1,0 +1,1 @@
+.ai-skill-survey{color:var(--cg-text);width:100%;min-width:0}.ai-skill-survey :is(button,input){font-family:inherit}.ai-skill-survey button:focus-visible{outline:2px solid var(--cg-primary);outline-offset:3px}.ai-skill-survey .option-button:hover{border-color:var(--cg-primary)}.ai-skill-survey .survey-profile-intro :is(h2,p,strong){color:inherit}
