@@ -1,0 +1,1 @@
+function e(e){if(!e||typeof e!=`object`)return[];let t=e;return!t.success||!Array.isArray(t.hadcrut5)?[]:t.hadcrut5.filter(e=>e&&Number.isFinite(e.year)&&Number.isFinite(e.mean)&&e.year>=1850).map(e=>({year:e.year,anomaly:e.mean})).sort((e,t)=>e.year-t.year)}export{e as t};

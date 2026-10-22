@@ -1,0 +1,1 @@
+function e(e){console&&console.error&&console.error(`Error: ${e}`)}function t(e){console&&console.warn&&console.warn(`Warning: ${e}`)}function n(e){let t=new Date().getTime(),n=e();return{time:new Date().getTime()-t,value:n}}function r(e){function t(){}t.prototype=e;let n=new t;function r(){return typeof n.bar}return r(),r(),e}export{t as i,n,e as r,r as t};

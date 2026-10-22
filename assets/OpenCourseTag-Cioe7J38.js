@@ -1,1 +1,0 @@
-import{j as e}from"./react-vendor-DqgYCnI0.js";function o(){return e.jsx("span",{style:{fontSize:"0.7rem",fontWeight:500,whiteSpace:"nowrap",padding:"2px 8px",borderRadius:"12px",color:"#059669",background:"#ecfdf5"},children:"开放"})}export{o as O};
