@@ -1,0 +1,1 @@
+var e=e=>`文献是学术与研究参考资料，包括论文、学位论文、研究报告、专著等。加入文献库后，其他人也可在前台“${e}”中浏览，无需另行发布。课件、作业附件及普通办公文档请使用文件或教学资源管理。`,t={paper:`论文`,thesis:`学位论文`,research_report:`研究报告`,monograph:`专著`,other_reference:`其他研究资料`};function n(e){return t[e]||t.other_reference}export{n,t as r,e as t};
