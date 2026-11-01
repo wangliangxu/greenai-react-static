@@ -1,0 +1,1 @@
+var e=e=>`/api/literature/workspace/${encodeURIComponent(e)}`;function t(e){let t=e?.response?.data?.detail;return typeof t==`string`?t:t?.message||`操作失败，请稍后重试。`}export{e as n,t};
