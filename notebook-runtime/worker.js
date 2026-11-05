@@ -1,4 +1,6 @@
 /* Dedicated Pyodide instance; all filesystem access stays inside this Worker. */
+import { loadNotebookPackages } from './packages.js';
+
 let python;
 let count = 0;
 let queue = Promise.resolve();
@@ -90,7 +92,7 @@ async function handle(method, args) {
     python.setStdin({ stdin: () => { throw new Error('请用变量提供输入；当前浏览器 Notebook 不支持 input() 对话框。'); } });
     try {
       // Only load packages bundled by the platform. Unknown imports report clearly.
-      await python.loadPackagesFromImports(args.source);
+      await loadNotebookPackages(python, args.source);
       python.globals.set('_ga_source', args.source);
       const rich = await python.runPythonAsync('await _ga_execute(_ga_source)');
       if (rich) {

@@ -1,1 +1,0 @@
-import{t as e}from"./vendor-hast-util-sanitize-OKvySxFi.js";function t(t){return function(n){return e(n,t)}}export{t};
