@@ -1,0 +1,1 @@
+import{t as e}from"./vendor-hast-util-sanitize-CcHMYXd_.js";function t(t){return function(n){return e(n,t)}}export{t};

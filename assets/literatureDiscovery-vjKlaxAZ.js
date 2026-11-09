@@ -1,1 +1,0 @@
-import{n as e}from"./api-DrSRLQJE.js";function t(t){return e.get(`/api/literature-search/search`,{params:t})}export{t};

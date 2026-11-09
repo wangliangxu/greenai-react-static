@@ -1,0 +1,1 @@
+import{n as e}from"./api-v2yi2bCy.js";function t(t){return e.get(`/api/literature-search/search`,{params:t})}export{t};
